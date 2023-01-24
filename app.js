@@ -99,7 +99,7 @@ function enterData(erty, pho,phone_number_id,redirect,companyId) {
   xhr.open("POST", "your Api Link");
   xhr.setRequestHeader("Accept", "*/*");
   xhr.setRequestHeader("Content-Type", "application/json");
-  xhr.setRequestHeader("Authorization", "Bearer 667dc1792a7a5b8088629f2aecfc5b96");
+  xhr.setRequestHeader("Authorization", "Bearer ");
 
   xhr.onreadystatechange = function () {
     if (xhr.readyState === 4) {
@@ -129,7 +129,7 @@ function getID(phoneNos, phone_number_id,redirect,companyId) {
   xhr.setRequestHeader("Content-Type", "application/json");
   xhr.setRequestHeader(
     "Authorization",
-    "Bearer 667dc1792a7a5b8088629f2aecfc5b96"
+    "Bearer "
   );
   let temString;
   xhr.onreadystatechange = function () {
@@ -152,7 +152,7 @@ function mycallback(result, pho, phone_number_id,redirect) {
       "https://graph.facebook.com/v15.0/" +
       phone_number_id +
       "/messages?access_token=" +
-      "EAAUdufA3HpUBAMYZBL44gkWqxNL1aCZCnFtYfPDyUQakWAJrnZAs3uNn8OBbjZCFsxfTeaRXwyrLesjpqPHEUoLtn1OLLNhQQ0pt9pVB6TucWMM2IBYXOVVt8KuZAUu3ZAsuXD2rhsweYXhWDZApGlzZAFJuwkkbtJTvFjt1nwG7aMEINibVkquO",
+      "",
     data: {
       messaging_product: "whatsapp",
       recipient_type: "individual",
@@ -180,7 +180,7 @@ function mycallback(result, pho, phone_number_id,redirect) {
     headers: {
       "Content-Type": "application/json",
       Authorization:
-        "EAAUdufA3HpUBAMYZBL44gkWqxNL1aCZCnFtYfPDyUQakWAJrnZAs3uNn8OBbjZCFsxfTeaRXwyrLesjpqPHEUoLtn1OLLNhQQ0pt9pVB6TucWMM2IBYXOVVt8KuZAUu3ZAsuXD2rhsweYXhWDZApGlzZAFJuwkkbtJTvFjt1nwG7aMEINibVkquO",
+        "",
     },
   });
 }
